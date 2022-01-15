@@ -35,7 +35,8 @@ namespace WinFormsApp1
 
             //notice form events (OnClick), get passed and object(sender), and eventArgs
             //im just sending null, cuz this is static, doesn't matter
-            BufferChanged.Invoke(null, EventArgs.Empty);
+            BufferChanged(null, EventArgs.Empty);
+            //just call like a function, don't need to use invoke (I don't think...)
         }
 
 
